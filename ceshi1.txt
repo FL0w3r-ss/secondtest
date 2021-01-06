@@ -1,0 +1,28 @@
+
+
+1、git init
+2、git clone后接需要克隆、复制的仓库地址，复制下来后可使用
+	eg：git clone https://github.com/zimogod/finReact-redux.git
+
+配置密钥：
+	ssh-keygen -t rsa -C '邮箱地址'
+	,回车直至出现方框里有许多 o =
+	进入github 点击右上角的下拉箭头，选择settings，选择SSH and GPG keys ，点击SSH keys后
+	的New SSH key自由输入title ，下面放入刚刚获得的密钥
+
+配置用户信息：
+	配置用户名：git config --global user.name "FL0w3r-ss"
+	配置用户邮箱：git config --global user.email "18735968261@163.com"
+查看命令：git config --list
+
+git常用命令：
+	git init 初始化仓库
+	git status 查看当前代码提交的状态
+	git add .  将本地文件添加到工作区
+	git commit -m '提交信息' 工作区文件推送到暂存区
+	git remote add origin 当前仓库地址  新创建的仓库和本地代码建立联系【只用一次】
+	git push -u origin master【首次推送】，之后都用git push
+之后的git操作：
+	1、git add .
+	2、git commit -m '提交信息'
+	3、git push
